@@ -1,0 +1,22 @@
+{
+  "name": "test2_layout",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "test2_layout"
+  },
+  "keywords": [
+    "test2"
+  ],
+  "author": "asen",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.11.0",
+    "sass": "^1.17.2"
+  }
+}
