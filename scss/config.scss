@@ -1,0 +1,8 @@
+
+$main-color: #fff;
+$body-color: rgb(87, 39, 197);
+
+
+@mixin easeout {
+    transition: all 0.5s ease-out;
+}
