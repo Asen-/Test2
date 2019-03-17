@@ -3,18 +3,27 @@
 
 body {
   padding: 0;
-  margin-top: 0; }
+  margin: 0 10%;
+  background-image: linear-gradient(to top right, #a331f0, #ce9cf7);
+  background-repeat: no-repeat; }
 
 .header_text {
   font-weight: 200;
   font-size: 5rem;
-  padding: 5rem 0 2rem 0; }
+  text-align: center;
+  padding: 20rem 0 2rem 0;
+  color: #fff; }
 
 .header {
   margin: 0 auto;
   padding: 0;
-  background: #f723da;
-  width: 80%;
-  height: 100%;
+  background: linear-gradient(to top right, #f723da, #faccfa);
+  width: 100%;
+  height: 150rem;
   margin-bottom: 0;
   padding-bottom: 0; }
+
+button {
+  margin-left: 50%;
+  width: 100px;
+  height: 30px; }
