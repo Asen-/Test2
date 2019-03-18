@@ -8,11 +8,11 @@ body {
   background-repeat: no-repeat; }
 
 .header_text {
-  font-weight: 200;
   font-size: 5rem;
   text-align: center;
-  padding: 20rem 0 2rem 0;
-  color: #fff; }
+  padding: 17rem 0 2rem 0;
+  color: #fff;
+  font-weight: 900; }
 
 .header {
   margin: 0 auto;
@@ -23,7 +23,24 @@ body {
   margin-bottom: 0;
   padding-bottom: 0; }
 
-button {
-  margin-left: 50%;
-  width: 100px;
-  height: 30px; }
+.learn_more {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 9em;
+  height: 50px;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  background: #fff;
+  color: black;
+  text-align: center;
+  line-height: 50px; }
+
+.mouse-logo {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding-top: 4rem;
+  filter: brightness(0.5) sepia(1) hue-rotate(140deg) saturate(6); }
