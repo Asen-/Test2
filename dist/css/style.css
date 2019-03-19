@@ -5,7 +5,9 @@ body {
   padding: 0;
   margin: 0 10%;
   background-image: linear-gradient(to top right, #a331f0, #ce9cf7);
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  font-family: 'Francois One', sans-serif;
+  letter-spacing: 0.1em; }
 
 .header_text {
   font-size: 5rem;
@@ -19,8 +21,8 @@ body {
   padding: 0;
   background: linear-gradient(to top right, #f723da, #faccfa);
   width: 100%;
-  height: 150rem;
-  margin-bottom: 0;
+  height: 50rem;
+  margin-top: 10rem;
   padding-bottom: 0; }
 
 .learn_more {
@@ -44,3 +46,29 @@ body {
   display: block;
   padding-top: 4rem;
   filter: brightness(0.5) sepia(1) hue-rotate(140deg) saturate(6); }
+
+.about {
+  width: 100%;
+  height: 50rem;
+  background-color: #fff;
+  margin-top: -1.3em; }
+  .about .opacity_about {
+    font-size: 10em;
+    opacity: 0.1;
+    margin: 0; }
+  .about .text {
+    float: right;
+    padding-right: 5rem;
+    text-align: right;
+    z-index: 1; }
+    .about .text .name-block {
+      color: #ff18ec; }
+    .about .text .text_about {
+      font-size: 4em; }
+  .about .image_aboutUs {
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    background: url(/image/notebook.jpg);
+    object-fit: cover;
+    z-index: -1; }
