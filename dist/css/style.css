@@ -51,24 +51,80 @@ body {
   width: 100%;
   height: 50rem;
   background-color: #fff;
-  margin-top: -1.3em; }
+  margin-top: -1.3em;
+  position: relative; }
   .about .opacity_about {
     font-size: 10em;
     opacity: 0.1;
     margin: 0; }
   .about .text {
+    position: absolute;
     float: right;
-    padding-right: 5rem;
+    right: 5rem;
     text-align: right;
     z-index: 1; }
     .about .text .name-block {
       color: #ff18ec; }
     .about .text .text_about {
       font-size: 4em; }
+    .about .text .button {
+      text-decoration: none;
+      display: block;
+      position: relative;
+      height: 100%;
+      float: right; }
+      .about .text .button:before {
+        display: block;
+        content: "";
+        position: absolute;
+        width: 100%;
+        bottom: -0.3em;
+        left: 0;
+        background: #f3f712;
+        z-index: -1;
+        height: 15px; }
   .about .image_aboutUs {
+    left: 3em;
     position: absolute;
-    width: 40%;
-    height: 40%;
-    background: url(/image/notebook.jpg);
-    object-fit: cover;
-    z-index: -1; }
+    margin-top: 3em;
+    width: 50%;
+    height: 50%;
+    background: url(/image/spider_grafiti.jpg);
+    object-fit: cover; }
+
+.latest_works {
+  width: 100%;
+  height: 50rem;
+  background-color: #fff;
+  margin-top: -1.3em; }
+  .latest_works .text_latest {
+    float: left;
+    left: 5rem;
+    text-align: left; }
+    .latest_works .text_latest .name-block {
+      color: #ff18ec; }
+    .latest_works .text_latest .text_works {
+      font-size: 4em; }
+  .latest_works .button_works {
+    text-align: left; }
+    .latest_works .button_works .link_work {
+      text-decoration: none;
+      display: block;
+      position: relative;
+      height: 100%;
+      float: right; }
+      .latest_works .button_works .link_work:before {
+        display: block;
+        content: "";
+        position: absolute;
+        width: 100%;
+        bottom: -0.3em;
+        left: 0;
+        background: #f3f712;
+        z-index: -1;
+        height: 15px; }
+      .latest_works .button_works .link_work .opacity_works {
+        font-size: 10em;
+        opacity: 0.1;
+        margin: 0;
+        float: right; }
