@@ -153,6 +153,7 @@ body{
             cursor: pointer;
             z-index: 1;
             position: absolute;
+            text-decoration: none;
             .link_work{
                 text-decoration: none;
                 
@@ -174,15 +175,64 @@ body{
 //grid image works
 
 .works_exemples{
+    width: 100%;
+    height: 50rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 25vw);
     grid-gap: 0;
     background-color: $main-color;
-    div.work_img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+    .work_3{
+        grid-column: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        position: relative;
+        
     }
+    .work_4{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row: 2;
+        
+    }
+    
 
+}
+
+.photography_button{
+    position: absolute;
+    width: 21em;
+    height: 5em;
+    bottom: 2em;
+    right: 2em;
+    background-color: $main-color;;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .text{
+        margin-left: 1em;             
+        .text_pink{
+            color: $secondary-color;
+            font-size: 0.9em;
+        }
+        .text_big{
+            font-size: 1.4em;
+        }
+    }
+    .arrow{
+        margin-right: 0.3em;
+        font-size: 3em;
+        align-self: center;
+        .fas {
+            color: $secondary-color;
+        }
+    }
+}
+
+.work_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
