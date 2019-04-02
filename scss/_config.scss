@@ -1,0 +1,46 @@
+
+$main-color: #fff;
+$body-color: rgb(87, 39, 197);
+$secondary-color: rgb(247, 35, 218);
+
+@mixin bigText {
+    font-size: 4em;
+}
+@mixin marked_link {
+    text-decoration: none;
+            display: block;
+            position: relative;
+            height: 100%;
+            float: right;
+            &:before{
+                display: block;
+                content: "";
+                position: absolute;
+                width: 100%;
+                bottom: -0.3em;
+                left: 0;
+                background: #f3f712;
+                z-index: -1;
+                height: 15px;
+}}
+
+@mixin hover_button{
+            width: 10rem;
+            height: 4rem;
+            background-color: $secondary-color;
+            box-shadow: -10px 10px  #f3f712 ;
+            
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            cursor: pointer;
+            z-index: 1;
+            position: absolute;
+            text-decoration: none;
+} 
+    
+
+
+@mixin easeout {
+    transition: all 0.5s ease-out;
+}

@@ -83,14 +83,15 @@ body {
         background: #f3f712;
         z-index: -1;
         height: 15px; }
-  .about .image_aboutUs {
-    left: 3em;
-    position: absolute;
-    margin-top: 3em;
-    width: 60%;
-    height: 55%;
-    background: url(/image/spider_grafiti.jpg) no-repeat;
-    object-fit: cover; }
+
+.image_aboutUs {
+  left: 3em;
+  position: absolute;
+  margin-top: 3em;
+  width: 60%;
+  height: 55%;
+  background: url(/image/spider_grafiti.jpg) no-repeat;
+  object-fit: cover; }
 
 .latest_works {
   display: flex;
@@ -115,26 +116,16 @@ body {
       height: 4rem;
       background-color: #f723da;
       box-shadow: -10px 10px  #f3f712;
-      margin: 8rem 8rem 0 12rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      cursor: pointer;
-      z-index: 1;
-      position: absolute;
       text-decoration: none; }
       .latest_works .button_works .button_link .link_work {
-        text-decoration: none;
         margin: 0; }
     .latest_works .button_works .opacity_works {
-      position: absolute;
       font-size: 10em;
       opacity: 0.1;
       z-index: 0; }
 
 .works_exemples {
   width: 100%;
-  height: 50rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 25vw);

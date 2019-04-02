@@ -1,4 +1,4 @@
-@import "config.scss";
+@import "_config.scss";
 
 
 *{
@@ -79,24 +79,10 @@ body{
             color: $secondary-color;
         }
         .text_about{
-            font-size: 4em;
+            @include bigText;
         }
         .button{
-            text-decoration: none;
-            display: block;
-            position: relative;
-            height: 100%;
-            float: right;
-            &:before{
-                display: block;
-                content: "";
-                position: absolute;
-                width: 100%;
-                bottom: -0.3em;
-                left: 0;
-                background: #f3f712;
-                z-index: -1;
-                height: 15px;
+            @include marked_link;
             }
         }
     }
@@ -113,7 +99,7 @@ body{
         object-fit: cover;
 
     }
-}
+
 
 // display flex  use 
 
@@ -133,7 +119,7 @@ body{
             color: $secondary-color;
         }
         .text_works{
-            font-size: 4em;
+            @include bigText;
         }
         
     }
@@ -141,28 +127,22 @@ body{
     .button_works{
         flex: 1;
         width: 50%;
+        
         .button_link{
             width: 10rem;
             height: 4rem;
             background-color: $secondary-color;
             box-shadow: -10px 10px  #f3f712 ;
-            margin: 8rem 8rem 0 12rem;
-            display: flex;
-            justify-content: center; 
-            align-items: center;
-            cursor: pointer;
-            z-index: 1;
-            position: absolute;
             text-decoration: none;
+            
+            
             .link_work{
-                text-decoration: none;
-                
                 margin: 0;
             }     
         }
         
         .opacity_works{
-            position: absolute;
+            
             font-size: 10em;
             opacity: 0.1;
             z-index: 0;
@@ -176,7 +156,7 @@ body{
 
 .works_exemples{
     width: 100%;
-    height: 50rem;
+    
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 25vw);
