@@ -127,26 +127,26 @@ body{
     .button_works{
         flex: 1;
         width: 50%;
-        
-        .button_link{
+        .button_button{
             width: 10rem;
             height: 4rem;
             background-color: $secondary-color;
             box-shadow: -10px 10px  #f3f712 ;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 100px 0 0 200px;
+        }
+        .button_link{
             text-decoration: none;
-            
-            
-            .link_work{
-                margin: 0;
-            }     
         }
         
         .opacity_works{
-            
+            line-height: 0px;
             font-size: 10em;
             opacity: 0.1;
             z-index: 0;
-            
+            margin-top: 100px;
         }
     }  
 }
@@ -215,4 +215,39 @@ body{
     height: 100%;
     object-fit: cover;
     display: block;
+}
+
+//services grid
+.ourServices{
+    width: 100%;
+    background-color: $main-color;
+    
+
+}
+.services__text{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding: 2em 3em 2em 3em;
+}
+.services_smallText{
+    color: $secondary-color;
+}
+
+.services_bigText{
+    @include bigText;
+}
+
+.services_grid{
+    width: 100%;
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: 33% 33% 33%;
+    background-color: $main-color;
+    grid-gap: 1em;
+    div{
+        width: 15rem;
+        height: 10rem;
+        background-color: $secondary-color;
+    }
 }
