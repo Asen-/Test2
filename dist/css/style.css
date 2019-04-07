@@ -196,11 +196,17 @@ body {
 .services_grid {
   width: 100%;
   display: grid;
-  justify-content: space-around;
-  grid-template-columns: 33% 33% 33%;
+  grid-template-columns: auto auto auto;
   background-color: #fff;
-  grid-gap: 1em; }
-  .services_grid div {
+  padding: 10px;
+  grid-gap: 10px; }
+  .services_grid .servicesGrid {
     width: 15rem;
-    height: 10rem;
-    background-color: #f723da; }
+    height: 15rem;
+    background-color: #fff;
+    border: 2px solid lightgray; }
+    .services_grid .servicesGrid i {
+      font-size: 3em; }
+
+.fa-clock, .fa-life-ring, .fa-bookmark {
+  color: #f3f712; }
